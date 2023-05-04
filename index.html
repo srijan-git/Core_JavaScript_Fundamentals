@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .point {
+        margin-top: 60px;
+        cursor: pointer;
+      }
+
+      #category {
+        cursor: pointer;
+      }
+
+      #grandparent {
+        padding: 25px;
+        width: 250px;
+        height: 250px;
+        background-color: red;
+      }
+
+      #parent {
+        padding: 25px;
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+      }
+
+      #child {
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Debouncing Technique -->
+    <input
+      type="text"
+      placeholder="Debouncing"
+      onkeypress="processDebouncing()"
+    />
+
+    <!-- Throttle Technique -->
+    <input type="text" placeholder="Throttle" onkeypress="processThrottle()" />
+
+    <!-- Event bubbling and capturing -->
+    <div id="grandparent" class="point">
+      <div id="parent">
+        <div id="child"></div>
+      </div>
+    </div>
+
+    <!-- Event Delegation -->
+    <div>
+      <ul id="category">
+        <li id="laptop">Laptop</li>
+        <li id="cameras">Cameras</li>
+        <li id="shoes">Shoes</li>
+      </ul>
+    </div>
+
+    <!-- <script src="./polyfilUsingBind.js"></script> -->
+    <!-- <script src="call_bind_apply_method.js"></script> -->
+    <!-- <script src="./Debouncing.js"></script> -->
+    <!-- <script src="./Throttling.js"></script> -->
+    <!-- <script src="./currying.js"></script> -->
+    <!-- <script src="./eventBubblingAndCapturing.js"></script> -->
+    <!-- <script src="./eventDelegration.js"></script> -->
+    <!-- <script src="firstClassFunctions.js"></script> -->
+    <!-- <script src="higher-order-functions.js"></script> -->
+  </body>
+</html>
